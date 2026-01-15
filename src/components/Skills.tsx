@@ -78,11 +78,11 @@ const Skills = () => {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-cyan-600 to-purple-600 flex items-center justify-center">
               <Zap className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 text-white">
               My <span className="gradient-text">Skills</span>
             </h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-lg">
+          <p className="text-gray-600 text-gray-300 max-w-3xl mx-auto text-lg">
             A comprehensive skill set to tackle any development challenge
           </p>
         </motion.div>
@@ -107,7 +107,7 @@ const Skills = () => {
                       {category.icon}
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-bold text-gray-900 text-white">
                     {category.title}
                   </h3>
                 </div>
@@ -117,14 +117,14 @@ const Skills = () => {
                   {category.skills.map((skill, idx) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-700 dark:text-gray-300 font-medium">
+                        <span className="text-gray-700 text-gray-300 font-medium">
                           {skill.name}
                         </span>
-                        <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+                        <span className="text-sm font-semibold text-gray-600 text-gray-400">
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="h-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+                      <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
@@ -149,10 +149,10 @@ const Skills = () => {
           className="mb-20"
         >
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-3xl font-bold text-gray-900 text-white mb-4">
               Professional <span className="gradient-text">Skills</span>
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 text-gray-300">
               Beyond technical expertise
             </p>
           </div>
@@ -168,12 +168,12 @@ const Skills = () => {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 className="glass rounded-2xl p-6 text-center group cursor-default"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <div className="text-blue-600 dark:text-blue-400">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="text-blue-400">
                     {skill.icon}
                   </div>
                 </div>
-                <h4 className="font-bold text-gray-900 dark:text-white mb-2">
+                <h4 className="font-bold text-gray-900 text-white mb-2">
                   {skill.name}
                 </h4>
                 <div className="flex items-center justify-center gap-2">
@@ -183,7 +183,7 @@ const Skills = () => {
                       className={`w-2 h-2 rounded-full ${
                         i < Math.floor(skill.level / 20)
                           ? 'bg-gradient-to-r from-blue-500 to-purple-500'
-                          : 'bg-gray-300 dark:bg-gray-700'
+                          : 'bg-gray-800'
                       }`}
                     />
                   ))}
@@ -201,10 +201,10 @@ const Skills = () => {
         >
           <div className="glass rounded-[2rem] p-8 md:p-12">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-3xl font-bold text-gray-900 text-white mb-4">
                 Development <span className="gradient-text">Experience</span>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 text-gray-300">
                 Years of hands-on experience across the stack
               </p>
             </div>
@@ -221,15 +221,15 @@ const Skills = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.2 }}
-                  className="text-center p-6 rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50"
+                  className="text-center p-6 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900"
                 >
                   <div className="text-5xl font-bold gradient-text mb-2">
                     {item.year}
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 text-white mb-2">
                     {item.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 text-gray-400">
                     {item.desc}
                   </p>
                 </motion.div>
@@ -241,9 +241,9 @@ const Skills = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800"
+              className="mt-12 pt-8 border-t border-gray-800"
             >
-              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+              <h4 className="text-2xl font-bold  text-white mb-6 text-center">
                 Currently <span className="gradient-text">Learning</span>
               </h4>
               <div className="flex flex-wrap justify-center gap-4">
@@ -255,7 +255,7 @@ const Skills = () => {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
                     whileHover={{ scale: 1.1 }}
-                    className="px-6 py-3 rounded-full bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-300 font-medium hover:shadow-lg transition-all"
+                    className="px-6 py-3 rounded-full bg-gradient-to-r from-gray-800 to-gray-900 text-gray-300 font-medium hover:shadow-lg transition-all"
                   >
                     {tech}
                   </motion.div>
