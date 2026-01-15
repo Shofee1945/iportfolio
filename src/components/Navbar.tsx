@@ -24,18 +24,22 @@ const Navbar = () => {
 
   return (
     <>
-      {/* NAVBAR GLASS TRANSPARAN */}
+      {/* NAVBAR - FIXED WIDTH */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className="fixed top-6 w-full z-50 px-4"
       >
-        {/* Container untuk center */}
         <div className="flex justify-center">
-          <div className={`transition-all duration-300 ${scrolled ? 'w-[90%]' : 'w-[85%]'} max-w-4xl`}>
-            {/* Glass Pill - TRANSPARAN */}
+          {/* INI YANG DIUBAH: Width konsisten di desktop */}
+          <div className={`
+            transition-all duration-300 
+            ${scrolled ? 'w-[95%]' : 'w-[90%]'}
+            max-w-6xl
+          `}>
+            {/* Glass Pill */}
             <div className="relative">
-              {/* Glass Backdrop - TRANSPARAN BANGET */}
+              {/* Glass Backdrop */}
               <div className="absolute inset-0 bg-black/20 backdrop-blur-xl rounded-[2rem] border border-white/10" />
               
               {/* Content */}
@@ -48,8 +52,8 @@ const Navbar = () => {
                   <span className="text-blue-400">.</span>
                 </div>
 
-                {/* Desktop Nav - CENTER */}
-                <div className="hidden md:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                {/* Desktop Nav - FIXED POSITION */}
+                <div className="hidden md:flex items-center space-x-6">
                   {navItems.map((item) => (
                     <a
                       key={item.name}
@@ -82,13 +86,11 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu - JUGA GLASS TRANSPARAN */}
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed inset-0 z-40 md:hidden pt-24">
-          {/* Backdrop */}
           <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={() => setIsOpen(false)} />
           
-          {/* Menu Glass */}
           <div className="relative max-w-sm mx-auto px-4">
             <div className="bg-black/30 backdrop-blur-xl rounded-2xl border border-white/10 p-6 space-y-3">
               {navItems.map((item) => (
