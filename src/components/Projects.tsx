@@ -78,11 +78,11 @@ const Projects = () => {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 text-white">
               Featured <span className="gradient-text">Projects</span>
             </h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-lg">
+          <p className="text-gray-600 text-gray-300 max-w-3xl mx-auto text-lg">
             Showcasing my best work - from concept to deployment
           </p>
         </motion.div>
@@ -197,10 +197,10 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }: any) => 
 
         {/* Project Info */}
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:gradient-text transition-all">
+          <h3 className="text-2xl font-bold text-gray-900 text-white group-hover:gradient-text transition-all">
             {project.title}
           </h3>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-gray-600 text-gray-300 leading-relaxed">
             {project.description}
           </p>
 
@@ -209,7 +209,7 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }: any) => 
             {project.tech.map((tech: string, idx: number) => (
               <span
                 key={idx}
-                className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300"
+                className="px-3 py-1.5 bg-gray-100 bg-gray-800 rounded-full text-sm font-medium text-gray-700 text-gray-300"
               >
                 {tech}
               </span>
@@ -222,7 +222,7 @@ const ProjectCard = ({ project, index, hoveredIndex, setHoveredIndex }: any) => 
               href={project.github}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex-1 px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2 font-medium"
+              className="flex-1 px-4 py-3 rounded-xl bg-gray-100 bg-gray-800 text-gray-700 text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2 font-medium"
             >
               <Github className="w-5 h-5" />
               Code
