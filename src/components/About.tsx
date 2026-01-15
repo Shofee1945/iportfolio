@@ -70,11 +70,11 @@ const About = () => {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
               <User className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 text-white">
               My <span className="gradient-text">Journey</span>
             </h2>
           </div>
-          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-lg">
+          <p className="text-gray-600 text-gray-300 max-w-3xl mx-auto text-lg">
             From passion to profession - the story behind the code
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ const About = () => {
                 {/* Avatar */}
                 <div className="relative">
                   <div className="w-40 h-40 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1">
-                    <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+                    <div className="w-full h-full rounded-full bg-gray-100 bg-gray-900 flex items-center justify-center">
                       <User className="w-20 h-20 text-gray-400" />
                     </div>
                   </div>
@@ -104,10 +104,10 @@ const About = () => {
 
                 {/* Bio */}
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 text-white mb-2">
                     Full Stack Developer
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  <p className="text-gray-600 text-gray-400 mb-4">
                     Specializing in modern web technologies and scalable architecture.
                     Passionate about creating digital solutions that make an impact.
                   </p>
@@ -139,10 +139,10 @@ const About = () => {
                       {item.icon}
                     </div>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                  <div className="text-2xl font-bold text-gray-900 text-white mb-1">
                     {item.value}
                   </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
+                  <div className="text-sm text-gray-600 text-gray-400">
                     {item.title}
                   </div>
                 </motion.div>
@@ -158,7 +158,7 @@ const About = () => {
             className="space-y-8"
           >
             <div className="glass rounded-[2rem] p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 text-white mb-8">
                 Career <span className="gradient-text">Timeline</span>
               </h3>
               
@@ -189,17 +189,17 @@ const About = () => {
                       {/* Content */}
                       <div className="flex-1 pt-2">
                         <div className="flex items-center gap-4 mb-2">
-                          <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">
+                          <span className="px-3 py-1 bg-gray-100 bg-gray-800 rounded-full text-sm font-medium">
                             {item.year}
                           </span>
-                          <h4 className="font-bold text-gray-900 dark:text-white">
+                          <h4 className="font-bold text-gray-900 text-white">
                             {item.title}
                           </h4>
                         </div>
-                        <p className="text-gray-700 dark:text-gray-300 font-medium mb-2">
+                        <p className="text-gray-700 text-gray-300 font-medium mb-2">
                           {item.company}
                         </p>
-                        <p className="text-gray-600 dark:text-gray-400">
+                        <p className="text-gray-600 text-gray-400">
                           {item.description}
                         </p>
                       </div>
@@ -211,10 +211,10 @@ const About = () => {
 
             {/* Philosophy */}
             <div className="glass rounded-[2rem] p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 text-white mb-4">
                 Development <span className="gradient-text">Philosophy</span>
               </h3>
-              <div className="space-y-4 text-gray-600 dark:text-gray-300">
+              <div className="space-y-4 text-gray-600 text-gray-300">
                 <p className="flex items-start gap-3">
                   <span className="text-blue-500 font-bold">✓</span>
                   <span>Write clean, maintainable code that tells a story</span>

@@ -17,7 +17,7 @@ const Hero = () => {
       className="fixed bottom-10 right-10 z-40"
     >
       <div className="flex flex-col items-center gap-2">
-        <span className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+        <span className="text-sm \text-gray-400 mb-2">
           Scroll
         </span>
         <div className="relative">
@@ -72,7 +72,7 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold">
-            <span className="block text-gray-900 dark:text-white">Hello, I'm</span>
+            <span className="text-white">Hello, I'm</span>
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -99,9 +99,9 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            I craft <span className="font-semibold text-blue-600 dark:text-blue-400">digital experiences</span> 
+            I craft <span className="font-semibold text-blue-400">digital experiences</span> 
             {' '}that blend stunning design with cutting-edge technology. 
             Let's build something amazing together.
           </motion.p>
@@ -119,11 +119,11 @@ const Hero = () => {
               { value: '100%', label: 'Satisfaction', icon: <Code className="w-5 h-5" /> },
             ].map((stat, idx) => (
               <div key={idx} className="glass px-6 py-4 rounded-xl min-w-[140px]">
-                <div className="flex items-center justify-center gap-2 text-blue-600 dark:text-blue-400 mb-1">
+                <div className="flex items-center justify-center gap-2 text-blue-400 mb-1">
                   {stat.icon}
                   <span className="text-2xl font-bold">{stat.value}</span>
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
+                <div className="text-sm text-gray-400">{stat.label}</div>
               </div>
             ))}
           </motion.div>
