@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tambahin di paling atas: */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Biar gak ketutup navbar */
+}
+
+/* Optional: Custom smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --background: #0a0a0a;  /* Black */
   --foreground: #ededed;  /* White */
